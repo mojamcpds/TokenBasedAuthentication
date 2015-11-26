@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31010.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TokenBasedAuthentication.Repositories", "TokenBasedAuthentication.Repositories\TokenBasedAuthentication.Repositories.csproj", "{5F7D602B-437F-4E61-B409-DD83C0F24E6D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TokenBasedAuthentication.Models", "TokenBasedAuthentication.Models\TokenBasedAuthentication.Models.csproj", "{898F1BBA-33EA-49A9-9170-54739929209F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TokenBasedAuthentication.Website", "TokenBasedAuthentication.Website\TokenBasedAuthentication.Website.csproj", "{CFE732B0-CA90-4FDE-B32C-03E8F0B20244}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TokenBasedAuthentication.Controller", "TokenBasedAuthentication.Controllers\TokenBasedAuthentication.Controller.csproj", "{72296FA2-AD0A-49A7-A054-286C0DC63017}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5F7D602B-437F-4E61-B409-DD83C0F24E6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F7D602B-437F-4E61-B409-DD83C0F24E6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F7D602B-437F-4E61-B409-DD83C0F24E6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F7D602B-437F-4E61-B409-DD83C0F24E6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{898F1BBA-33EA-49A9-9170-54739929209F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{898F1BBA-33EA-49A9-9170-54739929209F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{898F1BBA-33EA-49A9-9170-54739929209F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{898F1BBA-33EA-49A9-9170-54739929209F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFE732B0-CA90-4FDE-B32C-03E8F0B20244}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFE732B0-CA90-4FDE-B32C-03E8F0B20244}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFE732B0-CA90-4FDE-B32C-03E8F0B20244}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFE732B0-CA90-4FDE-B32C-03E8F0B20244}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72296FA2-AD0A-49A7-A054-286C0DC63017}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72296FA2-AD0A-49A7-A054-286C0DC63017}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72296FA2-AD0A-49A7-A054-286C0DC63017}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72296FA2-AD0A-49A7-A054-286C0DC63017}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

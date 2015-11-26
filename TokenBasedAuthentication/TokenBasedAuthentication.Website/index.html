@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript">
+     
+
+        $(document).ready(function () {
+            var tokenKey = 'accessToken';
+           
+            $("#Signup").on('click','', function () {
+                var userModel = new Object();
+                userModel.UserName = $('#UserName').val();
+                userModel.Password = $('#Password').val();
+                userModel.ConfirmPassword = $('#ConfirmPassword').val();
+                $.ajax({
+
+                    url: '../api/Account/Register',
+                    type: 'POST',
+                    dataType: 'json',
+                    data: userModel,
+                    success: function (data) {
+
+                        var signInData = "grant_type=password&username=" + $('#UserName').val() + "&password=" + $('#Password').val();
+
+                        $.ajax({
+                            url: '/token',
+                            type: 'POST',
+                            data: signInData,
+                            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                            success: function (data) {
+                                sessionStorage.setItem(tokenKey, data.access_token);
+                                alert('Success ' + $('#LoginName').val());
+                            },
+                            error: function (xhr) {
+                                alert(xhr.status + ': ' + xhr.statusText);
+                            }
+                        });
+                    },
+                    error: function (xhr) {
+                        alert(xhr.status + ': ' + xhr.statusText);
+                    }
+
+                });
+
+            });
+
+
+            $("#signin").on('click', function () {
+                var signInData = "grant_type=password&username=" + $('#LoginName').val() + "&password=" + $('#LoginPassword').val();
+
+
+                $.ajax({
+                    url: 'token',
+                    type: 'POST',
+                    data: signInData,
+                    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                    success: function (data) {
+                        sessionStorage.setItem(tokenKey, data.access_token);
+                        alert('Success ' + $('#LoginName').val());
+                    },
+                    error: function (xhr) {
+                        alert(xhr.status + ': ' + xhr.statusText);
+                    }
+                });
+            });
+
+            $("#logout").on('click', function () {
+                sessionStorage.removeItem(tokenKey);
+            });
+         
+        });
+
+
+    </script>
+</head>
+<body>
+<h2>Register</h2>
+<label class="control-label">User Name</label><br />
+<input id="UserName" type="text" /><br />
+<label class="control-label">Password</label><br />
+<input id="Password" type="password"/><br/>
+<label class="control-label">Password</label><br />
+<input id="ConfirmPassword" type="password" /><br />
+<button id="Signup" type="submit">Register</button><br/>
+<button id="Cancel" type="submit">Cancel</button><br/>
+
+<h2>Login</h2>
+
+
+<label class="control-label">User Name</label><br/>
+<input id="LoginName" type="text"/><br/>
+<label class="control-label">Password</label><br/>
+<input id="LoginPassword" type="password"/><br/>
+<button id="signin" type="submit">Login</button><br/>
+<button id="logout" type="submit">Login Out</button><br/>
+
+</body>
+</html>
+

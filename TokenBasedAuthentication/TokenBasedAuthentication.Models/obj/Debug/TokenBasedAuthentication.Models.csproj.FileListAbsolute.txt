@@ -1,0 +1,5 @@
+E:\ProjectManagementSystems\TokenBasedAuthentication\TokenBasedAuthentication.Models\bin\Debug\TokenBasedAuthentication.Models.dll
+E:\ProjectManagementSystems\TokenBasedAuthentication\TokenBasedAuthentication.Models\bin\Debug\TokenBasedAuthentication.Models.pdb
+E:\ProjectManagementSystems\TokenBasedAuthentication\TokenBasedAuthentication.Models\obj\Debug\TokenBasedAuthentication.Models.csprojResolveAssemblyReference.cache
+E:\ProjectManagementSystems\TokenBasedAuthentication\TokenBasedAuthentication.Models\obj\Debug\TokenBasedAuthentication.Models.dll
+E:\ProjectManagementSystems\TokenBasedAuthentication\TokenBasedAuthentication.Models\obj\Debug\TokenBasedAuthentication.Models.pdb
